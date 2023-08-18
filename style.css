@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #212529;
+    --text-color: #fff;
+    --gold-color: #E50914;
+    --gray-color: #302f2f;
+    --blue-color: #0071eb;
+
+}
+body{
+    
+    color: var(--text-color);
+}
+ 
+.nav-link{
+    padding-left: 1.2rem;
+    color: #faefef !important;
+    z-index: 1000;
+    font-weight: 600;
+    animation: nav 3s linear;
+}
+.nav-link:hover{
+    color: var(--text-color) !important;
+    font-size: 20px;
+}
+@keyframes nav{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.box1{
+    width: 7%;
+    height: 55px;
+}
+.logoimage{
+    width: 100%;
+    height: 100px;
+    animation: logo-rotate 2s linear;
+}
+@keyframes logo-rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.text-size{
+    font-size: 18px;
+}
+.home{
+    width: 100%;
+    height: 850px;
+    margin-top: -6%;
+    background: linear-gradient(rgba(39, 54, 92, 0.6), rgba(20, 27, 46, 0.9)), url(images/back-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+/* home section */
+.home-row{
+    padding-top: 18rem;
+    padding-left: 5rem;
+}
+.first-h{
+    font-family: monospace !important;
+    font-size: 4rem;
+    font-weight: 900;
+    animation: text 3s linear;
+}
+@keyframes text {
+    0%{
+        font-size: 1rem;
+        opacity: 0;
+    }
+    30%{
+        font-size: 1.5rem;
+        opacity: 0.4;
+    }
+    60%{
+        font-size: 3rem;
+        opacity: 0.7;
+    }
+    90%{
+        font-size: 4rem;
+        opacity: 1;
+    }
+    100%{
+        font-size: 4rem;
+        opacity: 1;
+    }
+}
+.float-right{
+    width: 30%;
+    /* border: 2px solid red; */
+    margin-left: 4rem;
+}
+.home-img{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid red; */
+    margin-top: -50px;
+    animation: hlogo 5s linear;
+}
+.home-img > img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes hlogo{
+    0%{
+        opacity: 0;
+        margin-left: -19rem;
+    }
+    30%{
+        opacity: 0.3;
+        margin-left: -10rem;
+    }
+    60%{
+        opacity: 0.6;
+        margin-left: -2rem;
+    }
+    90%{
+        opacity: 0.9;
+        margin-left: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 1rem;
+    }
+}

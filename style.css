@@ -18,28 +18,34 @@ body{
     
     color: var(--text-color);
 }
- 
-.nav-link{
-    padding-left: 1.2rem;
-    color: #faefef !important;
-    z-index: 1000;
-    font-weight: 600;
+.nav-slide{
+    /* margin-top: -0.5rem; */
     animation: nav 3s linear;
-}
-.nav-link:hover{
-    color: var(--text-color) !important;
-    font-size: 20px;
 }
 @keyframes nav{
     0%{
-        opacity: 0;
+        opacity: 0.1;
+        margin-top: -2rem;
     }
     50%{
         opacity: 0.5;
+        margin-top: -1.5rem;
     }
     100%{
         opacity: 1;
+        margin-top: 0;
     }
+}
+
+.nav-link{
+    color: #faefef !important;
+    z-index: 1000;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: var(--text-color) !important;
+    font-size: 20px;
 }
 
 .box1{
@@ -49,7 +55,7 @@ body{
 .logoimage{
     width: 100%;
     height: 100px;
-    animation: logo-rotate 2s linear;
+    animation: logo-rotate 10s infinite;
 }
 @keyframes logo-rotate{
     0%{
@@ -65,6 +71,50 @@ body{
 .text-size{
     font-size: 18px;
 }
+/* MEDIA QUERY FOR NAV BAR  */
+@media screen and (max-width: 1199px){
+    .text-size{
+        font-size: 16px;
+    }
+    .nav-slide{
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width: 1005px){
+    .text-size{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 900px){
+    .navbar-collapse{
+        background: var(--gray-color);
+        margin-left: -60px;
+        padding-left: 135px;
+        box-shadow: 3px 2px 5px var(--gray-color);
+    }
+    .box1 {
+        width: 12%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .box1 {
+        width: 25%;
+    }
+    .navbar-collapse{
+        padding-left: 52px;
+    }
+}
+@media screen and (max-width: 390px){
+    .box1 {
+        width: 30%;
+    }
+    .navbar-collapse{
+        padding-left: 32px;
+    }
+}
+/* END OF MEDIA QUERY FOR NAV BAR  */
+/* HOME SECTION  */
 .home{
     width: 100%;
     height: 850px;
@@ -72,7 +122,7 @@ body{
     background: linear-gradient(rgba(39, 54, 92, 0.6), rgba(20, 27, 46, 0.9)), url(images/back-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 10;
+    border: 2px solid blueviolet;
 }
 
 /* home section */
@@ -85,28 +135,14 @@ body{
     font-size: 4rem;
     font-weight: 900;
     animation: text 3s linear;
+    text-transform: capitalize;
 }
 @keyframes text {
-    0%{
-        font-size: 1rem;
-        opacity: 0;
-    }
-    30%{
-        font-size: 1.5rem;
-        opacity: 0.4;
-    }
-    60%{
-        font-size: 3rem;
-        opacity: 0.7;
-    }
-    90%{
-        font-size: 4rem;
-        opacity: 1;
-    }
-    100%{
-        font-size: 4rem;
-        opacity: 1;
-    }
+    0%{font-size: 4; opacity: 0;}
+    30%{font-size: 4rem; opacity: 0;}
+    60%{font-size: 4rem; opacity: 00.4;}
+    90%{font-size: 4rem; opacity: 0.7;}
+    100%{font-size: 4rem; opacity: 1;}
 }
 .float-right{
     width: 30%;
@@ -125,24 +161,101 @@ body{
     height: 100%;
 }
 @keyframes hlogo{
-    0%{
-        opacity: 0;
-        margin-left: -19rem;
+    0%{opacity: 0; margin-left: -19rem;}
+    30%{opacity: 0.3; margin-left: -10rem;}
+    60%{opacity: 0.6; margin-left: -2rem;}
+    90%{opacity: 0.9; margin-left: 0;}
+    100%{opacity: 1; margin-left: 1rem;}
+}
+ /* MEDIA QUERY FOR HOME SECTIONS  */
+@media screen and (max-width: 1024px){
+    .first-h{
+        font-size: 3rem;
     }
-    30%{
-        opacity: 0.3;
-        margin-left: -10rem;
+    @keyframes text {
+        0%{font-size: 0.5rem; opacity: 0;}
+        30%{font-size: 1.5rem; opacity: 0;}
+        60%{font-size: 2.5rem; opacity: 0;}
+        90%{font-size: 3rem; opacity: 0.1;}
+        100%{font-size: 3rem; opacity: 1;}
     }
-    60%{
-        opacity: 0.6;
-        margin-left: -2rem;
-    }
-    90%{
-        opacity: 0.9;
-        margin-left: 0;
-    }
-    100%{
-        opacity: 1;
-        margin-left: 1rem;
+    .home-img{
+        height: 350px;
     }
 }
+@media screen and (max-width: 905px){
+    .first-h {
+        font-size: 2.6rem;
+        line-height: 1.3;
+    }
+    .float-right {
+        width: 37%;
+        margin-left: 1rem;
+    }
+    .home-img {
+        height: 310px;
+    }
+    @keyframes text {
+        0%{font-size: 0.5rem; opacity: 0;}
+        30%{font-size: 1.5rem; opacity: 0;}
+        60%{font-size: 2.5rem; opacity: 0;}
+        90%{font-size: 2.6rem; opacity: 0.1;}
+        100%{font-size: 2.6rem; opacity: 1;}
+    }
+}
+@media screen and (max-width: 510px){
+    .home-row {
+        padding-top: 14rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .float-right {
+        width: 63%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+    .home-img {
+        height: 293px;
+    }
+    @keyframes hlogo{
+        0%{opacity: 0; margin-left: -1rem;}
+        30%{opacity: 0; margin-left: -0.5rem;}
+        60%{opacity: 0; margin-left: 0;}
+        90%{opacity: 0.1; margin-left: 0;}
+        100%{opacity: 1; margin-left: 0;}
+    }
+    .slide-l{
+        /* border: 2px solid; */
+        animation: 2s slideL linear;
+    }
+    @keyframes slideL {
+        0%{opacity: 0.1; padding-left: 0px; text-align: left;}
+        30%{opacity: 0.3; padding-left: 18px;}
+        60%{opacity: 0.6; padding-left: 40px;}
+        90%{opacity: 0.9; text-align: center;}
+        100%{opacity: 1;}
+    }
+}
+@media screen and (max-width: 400px){
+    .first-h {
+        font-size: 2.4rem;
+        line-height: 1;
+        text-align: center;
+    }
+    .float-right {
+        width: 70%;
+        padding-top: 90px;
+    }
+    .home-img {
+        height: 258px;
+    }
+    @keyframes text {
+        0%{font-size: 0.5rem; opacity: 0;}
+        30%{font-size: 2.4rem; opacity: 0;}
+        60%{font-size: 2.4rem; opacity: 0.1;}
+        90%{font-size: 2.4rem; opacity: 1;}
+        100%{font-size: 2.4rem; opacity: 1;}
+    }
+}
+
+

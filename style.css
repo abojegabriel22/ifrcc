@@ -474,3 +474,18 @@ nav-hr
         height: 292px;
     }
 }
+
+/* START THE RANKING STRUCTURE OF OFFICERS */
+.row-bg{
+    background-color: var(--blue-dark);
+}
+.rank-h1{
+    font-size: 25px;
+}
+.rank-h2{
+    font-size: 20px;
+    color: var(--blue-light);
+}
+.vertic-line{
+    border-left: 5px solid var(--blue-color);
+}

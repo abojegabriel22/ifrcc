@@ -309,6 +309,7 @@ nav-hr
     font-size: 3rem;
     font-weight: 900;
     margin-top: 4rem;
+    text-transform: capitalize;
 }
 .text-shadow{
     box-shadow: 3px 2px 5px var(--gray-color);
@@ -379,5 +380,52 @@ nav-hr
 @media screen and (max-width: 400px){
     .about {
         margin-top: -11rem;
+    }
+}
+
+/* START THE TRAINING SECTION  */
+.trainings{
+    background: var(--blue-light);
+}
+.train-heading{
+    font-size: 2rem;
+    margin-top: 0;
+    /* padding: 4rem 0 2rem 0; */
+}
+.flex-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-height{
+    width: 50%;
+    height: 350px;
+    /* border: 2px solid red; */
+}
+.img-height > img{
+    width: 100%;
+    height: 100%;
+}
+.cardT{
+    color: var(--blue-light) !important;
+    text-transform: capitalize;
+}
+.float-endtext{
+    text-align: end;
+}
+/* MEDIA QUERY FOR TRAINIG UNITS  */
+@media screen and (max-width: 800px) {
+    .train-heading{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .img-height {
+        width: 100%;
+    }
+    .float-endtext{
+        text-align: start;
+    }
+    .cardT{
+        padding-top: 1rem;
     }
 }

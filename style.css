@@ -489,3 +489,13 @@ nav-hr
 .vertic-line{
     border-left: 5px solid var(--blue-color);
 }
+/* MEDIA QUERY FOR RANKING STRUCTURE SECTION  */
+@media screen and (max-width: 900px) {
+    .scale-text{
+        scale: 0.8;
+    }
+    .vertic-line{
+        border-bottom: 1px solid var(--blue-light);
+        /* margin-right: 1rem; */
+    }
+}

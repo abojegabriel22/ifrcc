@@ -390,7 +390,14 @@ nav-hr
 .train-heading{
     font-size: 2rem;
     margin-top: 0;
+    color: var(--text-color);
     /* padding: 4rem 0 2rem 0; */
+}
+.white-line::before{
+    background-color: var(--text-color);
+}
+.white-line::after{
+    background-color: var(--text-color);
 }
 .flex-display{
     display: flex;

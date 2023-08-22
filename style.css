@@ -436,3 +436,23 @@ nav-hr
         padding-top: 1rem;
     }
 }
+
+/* START THE STRUCTURE SECTION  */
+.structure{
+    /* border: 2px solid red; */
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+.chap-heading{
+    color: var(--army-gray) !important;
+}
+.chaplain-image{
+    border-radius: 10px;
+}
+
+/* START THE MEDIA QUERY FOR STRUCTURE  */
+@media screen and (min-width: 850px) {
+    .structure{
+        margin-top: -5rem;
+    }
+}

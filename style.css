@@ -716,3 +716,62 @@ nav-hr
     background: var(--blue-color);
 
 }
+.copy-color{
+    color: var(--blue-light);
+}
+/* START THE MEDIA QUERY FOR END SECTION  */
+@media screen and (max-width: 1480px) {
+    .end{
+        padding: 15px 3%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .ceo-image {
+        height: 290px;
+        margin-left: 5rem;
+    }
+    .ceo-adjust {
+        text-align: center;
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .border-2 {
+        height: 400px;
+    }
+    .ceo-image {
+        height: 200px;
+    }
+    .ceo-adjust {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .border-2 {
+        height: 750px;
+    }
+    .map-link{
+        height: auto;
+    }
+    .ceo-image {
+        height: 196px;
+        width: 50%;
+        margin: 1rem auto;
+    }
+    .ceo-adjust {
+        font-size: 16px;
+    }
+    .end {
+        padding: 15px 3% 0 15px;
+    }
+    .sm-mt{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .ceo-image {
+        height: 170px;
+        width: 60%;
+        margin: 1rem auto 0;
+    }
+}

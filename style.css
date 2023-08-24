@@ -664,10 +664,7 @@ nav-hr
     color: var(--blue-color);
 
 }
-/* .red-border{
-    border: 2px solid green;
-    background-color: var(--bg-color);
-} */
+
 .border-2{
     /* border: 2px solid red; */
     height: 480px;

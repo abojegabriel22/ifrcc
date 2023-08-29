@@ -134,9 +134,7 @@ nav-hr
 .home{
     width: 100%;
     height: auto;
-    /* margin-top: -6%; */
     background-image: url(images/back-img.jpg);
-    /* background: linear-gradient(rgba(39, 54, 92, 0.6), rgba(20, 27, 46, 0.9)), url(images/back-img.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     /* border: 2px solid blueviolet; */
@@ -148,12 +146,13 @@ nav-hr
     padding-left: 5rem;
 }
 .first-h{
-    font-family: monospace !important;
+    font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 900;
     animation: text 3s linear;
     text-transform: capitalize;
-    color: blue;
+    color: var(--text-color);
+    text-shadow: -5px 3px 6px black;
 }
 @keyframes text {
     0%{font-size: 4; opacity: 0;}
@@ -304,7 +303,7 @@ nav-hr
     font-size: 22px;
     font-weight: 400;
     animation: about 15s linear;
-    color: blue;
+    color: black;
 }
 @keyframes about {
     0%{opacity: 0;}

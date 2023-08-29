@@ -666,6 +666,9 @@ nav-hr
 .address-text{
     font-size: 18px;
 }
+.tShadow{
+    text-shadow: -5px 3px 6px black;
+}
 .contact-icons i{
     height: 45px;
     width: 45px;
@@ -697,7 +700,7 @@ nav-hr
     width: 360px;
     height: 385px;
     /* border: 2px solid darkgrey; */
-    margin: 6rem auto 0 auto;
+    margin: 5rem auto 0 auto;
 }
 .ceo-img > img{
     width: 100%;
@@ -748,7 +751,7 @@ nav-hr
     .ceo-img {
         width: 280px;
         height: 284px;
-        margin: 4rem auto 0 auto;
+        margin: 3rem auto 0 auto;
     }
     .ceo-adjust {
         font-size: 16px;
